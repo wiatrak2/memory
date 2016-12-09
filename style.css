@@ -1,0 +1,73 @@
+body {
+    background-color: #ffe4c4;
+    padding: 10px;
+}
+
+.wrapper {
+    display: -webkit-flex;
+    display: box;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    text-align: center;
+    justify-content: center;
+
+}
+
+@keyframes hoverAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.board {
+    margin: 50px;
+    width: 760px;
+    height: 650px;
+    background-color: #faebd7;
+    position: relative;
+    display: block;
+}
+
+.tile {
+    position: absolute;
+    cursor: pointer;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #ffe4c4 url("back.png") center center no-repeat;
+    margin: 10px;
+}
+
+.tile:hover {
+    background-color: #fae0a0;
+    animation-name: hoverAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.moves {
+    font-size: 14pt;
+    text-align: center;
+}
+
+.start {
+    padding: 0.8em 3em;
+    background: cadetblue;
+    color: #FFF;
+    border: 0;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.5s background-color, 0.5s box-shadow;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    margin:30px auto;
+}

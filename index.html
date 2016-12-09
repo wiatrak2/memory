@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Memory</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <button class="start">START GAME</button>
+
+    <div class="moves">Moves: 0</div>
+
+    <div class="wrapper">
+
+    <div class="board"></div>
+    </div>
+
+
+
+<script language="javascript" type="text/javascript" src="script.js"></script>
+    <script>
+        $('div.tile').on('click', function () {
+            console.log($(this).data('tileType'));
+
+        })
+    </script>
+</body>
+</html>
